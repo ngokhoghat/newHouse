@@ -1,0 +1,129 @@
+.footer {
+  background: url("https://kitasofa.com/wp-content/themes/kitasofa.com/images/footer_bg.png")
+    no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  color: $text-color-footer;
+
+  .footer-top {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 65px 0px;
+    font-size: 14px;
+    font-weight: 500;
+
+    &__phone-number {
+      text-align: center;
+
+      &__number {
+        color: $text-color-phone-number;
+        letter-spacing: 10px;
+        font-size: 22px;
+        line-height: 1;
+      }
+    }
+
+    &__about-us {
+      &__title {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      &__sub-title {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .infomation-list-item {
+        margin-top: 20px;
+
+        &__item {
+          display: flex;
+          align-items: center;
+          margin: 7px 0;
+          position: relative;
+
+          &__text {
+            width: 100%;
+            padding-left: 30px;
+          }
+
+          &__icon {
+            width: 25px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .group-input {
+        margin: 20px 0;
+        background: $bg-color-primary-white;
+        position: relative;
+
+        &__input {
+          width: 100%;
+          height: 45px;
+          padding: 0 15px;
+          padding-right: 35px;
+          line-height: 45px;
+          color: #898989;
+          background-color: #ffffff;
+          outline: none;
+          border: none;
+        }
+
+        &__icon {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 15px;
+          color: $bg-color-black;
+        }
+      }
+
+      .group-icon {
+        .fab {
+          padding: 7px;
+          border: 1px solid #898989;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    background: #000;
+    margin-top: 0;
+    padding: 15px;
+
+    &__license {
+      &__text {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+
+    &__group-icon {
+      width: 100%;
+      text-align: end;
+      margin-top: 20px;
+      
+      .fab {
+        padding: 0 5px;
+        color: #898989;
+      }
+    }
+  }
+}
