@@ -1,6 +1,5 @@
 .footer {
-  background: url("https://kitasofa.com/wp-content/themes/kitasofa.com/images/footer_bg.png")
-    no-repeat;
+  background: url("https://kitasofa.com/wp-content/themes/kitasofa.com/images/footer_bg.png") no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
   background-size: auto auto;
@@ -17,12 +16,25 @@
 
     &__phone-number {
       text-align: center;
+      margin-bottom: 65px;
+
+      &__text {
+        font-size: 14px;
+
+        @include min-md {
+          font-size: 16px;
+        }
+      }
 
       &__number {
         color: $text-color-phone-number;
         letter-spacing: 10px;
-        font-size: 22px;
+        font-size: 25px;
         line-height: 1;
+
+        @include min-md {
+          font-size: 80px;
+        }
       }
     }
 
@@ -119,7 +131,7 @@
       width: 100%;
       text-align: end;
       margin-top: 20px;
-      
+
       .fab {
         padding: 0 5px;
         color: #898989;
