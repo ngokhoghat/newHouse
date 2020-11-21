@@ -6,6 +6,17 @@ const customer = {
       // Optional parameters
       direction: "horizontal",
       loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+        },
+        993: {
+          slidesPerView: 3,
+        },
+      },
       // If we need pagination
       pagination: {
         el: ".customer-swiper-pagination",

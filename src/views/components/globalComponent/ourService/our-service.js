@@ -7,6 +7,17 @@ const ourService = {
       direction: "horizontal",
       loop: true,
       autoplay: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+        },
+        993: {
+          slidesPerView: 4,
+        },
+      },
       // If we need pagination
       pagination: {
         el: ".swiper-pagination",
