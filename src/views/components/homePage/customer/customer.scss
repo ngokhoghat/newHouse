@@ -1,0 +1,129 @@
+.customer {
+  width: 100%;
+  margin: 40px 0;
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+      content: "";
+      min-width: 100px;
+      height: 3px;
+      background: #e5ae49;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__infomation {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  .customer-container {
+    .customer-item {
+      padding: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      padding-top: 20px;
+
+      &__img {
+        width: 150px;
+        height: 150px;
+
+        border-radius: 50%;
+      }
+
+      &__content {
+        margin: 20px;
+        text-align: center;
+
+        &__title {
+          color: #e5ae49;
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        &__text {
+          font-size: 12px;
+          color: rgb(172, 172, 172);
+          margin: 10px 0;
+        }
+
+        &__read-more {
+          font-size: 12px;
+          color: #e5ae49;
+          font-style: italic;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .swiper-tool {
+    width: 100%;
+    padding: 0 15px;
+    padding-bottom: 15px;
+
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+
+    &__icon {
+      z-index: 1;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .customer-swiper-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .swiper-pagination-bullet {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ccc;
+      margin: 0 7px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #869791;
+    }
+  }
+}

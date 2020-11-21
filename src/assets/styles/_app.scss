@@ -4,7 +4,7 @@
 
 // Plugin
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
+@import '../../../node_modules/swiper/swiper.scss';
 // Base
 @import "./base/font-language/en-EN";
 @import "./base/_functions";
@@ -18,3 +18,15 @@
 // Component
 @import "../../views/components/header/header";
 @import "../../views/components/footer/footer";
+
+@import "../../views/components/globalComponent/productList/product-list.scss";
+@import "../../views/components/globalComponent/ourService/our-service.scss";
+@import "../../views/components/homePage/review/review.scss";
+@import "../../views/components/homePage/subscribe/subscribe.scss";
+@import "../../views/components/homePage/customer/customer.scss";
+@import "../../views/components/homePage/brand/brand.scss";
+
+
+
+//Page
+@import "../../views/components/homePage/home-page.scss"
