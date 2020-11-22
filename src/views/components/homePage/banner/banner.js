@@ -9,7 +9,7 @@ const banner = {
 
       // If we need pagination
       pagination: {
-        el: ".swiper-pagination",
+        el: ".banner-swiper-pagination",
       },
 
       // Navigation arrows

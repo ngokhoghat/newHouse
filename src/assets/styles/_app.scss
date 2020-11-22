@@ -25,8 +25,17 @@
 @import "../../views/components/homePage/subscribe/subscribe.scss";
 @import "../../views/components/homePage/customer/customer.scss";
 @import "../../views/components/homePage/brand/brand.scss";
+@import "../../views/components/homePage/banner/banner.scss";
+
+@import "../../views/components/aboutPage/bread-crumb/bread-crumb.scss";
+
+@import "../../views/components/productPage/productSection/product-section.scss";
+@import "../../views/components/productPage/product-item/product-item.scss";
+@import "../../views/components/productPage/categorySection/category-section.scss";
 
 
 
 //Page
-@import "../../views/components/homePage/home-page.scss"
+@import "../../views/components/homePage/home-page.scss";
+@import "../../views/components/aboutPage/about-page.scss";
+@import "../../views/components/productPage/product-page.scss";

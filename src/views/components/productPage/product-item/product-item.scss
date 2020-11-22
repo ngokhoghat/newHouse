@@ -1,0 +1,124 @@
+.product-item {
+  margin-bottom: 30px;
+  border: 1px solid #faefdb;
+  padding: 1px;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &__old {
+      text-decoration: line-through;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    &__new {
+      color: #e5ae49;
+    }
+  }
+
+  .price {
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "đ";
+      position: absolute;
+      font-size: 10px;
+      text-decoration: underline;
+      top: -3px;
+      right: -10px;
+    }
+  }
+}
+
+.product-item-detail {
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  border: 1px solid #faefdb;
+  display: flex;
+  flex-direction: column;
+
+  @include min-md {
+    flex-direction: row;
+  }
+
+  &__img {
+    width: 50%;
+
+    @include min-md {
+      width: 20%;
+      max-height: 150px;
+      margin-right: 40px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__price {
+    display: flex;
+    margin: 15px 0;
+    justify-content: center;
+
+    &__old {
+      text-decoration: line-through;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    &__new {
+      margin-right: 20px;
+      color: #e5ae49;
+    }
+  }
+
+  &__add-to-card {
+    display: flex;
+    align-items: center;
+    color: #e5ae49;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &__btn {
+      padding: 5px 10px;
+      border: 1px solid #e5ae49;
+      margin-right: 3px;
+    }
+    &__view-detail {
+      padding: 5px 10px;
+      border: 1px solid #e5ae49;
+    }
+  }
+
+  .price {
+    position: relative;
+
+    &::after {
+      content: "đ";
+      position: absolute;
+      font-size: 10px;
+      text-decoration: underline;
+      top: -3px;
+      right: -10px;
+    }
+  }
+}

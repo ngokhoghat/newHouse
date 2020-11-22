@@ -1,0 +1,22 @@
+.product-section
+  h1.product-section__title Sản phẩm
+  .product-section__container
+    .product-section__container__filter
+      .filter-group-icon
+        #grid-view.filter-group-icon__icon.active
+          .fas.fa-th
+        #detail-view.filter-group-icon__icon
+          .fas.fa-bars
+      select.filter-select(name="")
+        option(value="") Thứ tự theo mức độ phổ biến
+        option(value="") Thứ tự theo sản phẩm mới
+        option(value="") Thứ tự theo giá: cao xuống thấp
+        option(value="") Thứ tự theo giá: thấp đến cao
+    .row.product-section__container__product-list
+      include ../product-item/product-item.pug
+      include ../product-item/product-item.pug
+      include ../product-item/product-item.pug
+      include ../product-item/product-item.pug
+      include ../product-item/product-item.pug
+      include ../product-item/product-item.pug
+      include ../product-item/product-item.pug

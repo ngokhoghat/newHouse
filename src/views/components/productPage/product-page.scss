@@ -1,0 +1,17 @@
+.product-page {
+  color: #000;
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 200px;
+
+    @include min-md {
+      flex-direction: row;
+    }
+  }
+
+  &__brand-section {
+    color: #000;
+  }
+}

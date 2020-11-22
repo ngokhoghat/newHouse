@@ -1,0 +1,22 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - product
+
+block basicSeo
+  meta(name='description' content='home page')
+  meta(name='keywords' content='home, page')
+  meta(name='author' content='')
+
+block content
+
+  //- Desktop page
+  section.product-page
+    .container
+      .row.product-page__container
+        .col-12.col-md-3.product-page__category-section
+          include ../components/productPage/categorySection/category-section.pug
+        .col-12.col-md-9.product-page__list-product-section
+          include ../components/productPage/productSection/product-section.pug
+    .product-page__brand-section
+      include ../components/homePage/brand/brand.pug

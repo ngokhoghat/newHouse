@@ -5,11 +5,20 @@ block title
 
 block basicSeo
   meta(name='description' content='home page')
-  meta(name='keywords', content='home, page')
+  meta(name='keywords' content='home, page')
   meta(name='author' content='')
 
 block content
 
   //- Desktop page
-  section.page.
-  
+  section.about-page
+    .about-page__breadcrumb-section
+      include ../components/aboutPage/bread-crumb/bread-crumb.pug
+    .about-page__introduce-section
+      .container
+        .introduce
+        h3.introduce__title Giới thiệu
+          h4 Ý nghĩa của tên Kita
+          p #{'KITA'} được viết tắt từ hai ký tự đầu của hai cụm từ Kiến Tạo và Kiệt Tác. Công ty được hình thành với mong muốn mang đến những thiết kế, sản phẩm tuyệt đẹp dành cho ngành xây dựng và nội thất. Tại Nhật Bản, từ Kita có nghĩa là phía Bắc. Còn ở Tây Ban Nha, Kita là một cái tên hay được nhiều người sử dụng.
+    .about-page__brand-section
+      include ../components/homePage/brand/brand.pug

@@ -1,0 +1,61 @@
+.bread-crumb {
+  height: 300px;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  background: url("https://kitasofa.com/wp-content/themes/kitasofa.com/images/breadcrumb_bg.png");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.3);
+    position: absolute;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .breadcrumb {
+    background: none;
+  }
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+      color: #fff;
+      font-size: 15px;
+
+      &:first-child {
+        font-weight: 600;
+      }
+    }
+
+    .fas {
+      color: #fff;
+      margin: 0 5px;
+      font-size: 10px;
+    }
+  }
+}
