@@ -12,9 +12,14 @@ block content
 
   //- Desktop page
   section.product-detail-page
-    h1 Product
-    h1 Product
-    h1 Product
-    h1 Product
-    h1 Product
-    
+    //- header
+    .about-page__header-container
+      include ../components/aboutPage/headerInfomation/headerInfomation.pug
+      include ../components/header/header.pug
+    .about-page__breadcrumb-section
+      include ../components/aboutPage/bread-crumb/bread-crumb.pug
+    .product-detail-page__product-container
+      .container
+        include ../components/productDetailPage/product/product.pug
+      .container
+        include ../components/productDetailPage/productDetail/productDetail.pug

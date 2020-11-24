@@ -1,8 +1,8 @@
-import Swiper from "swiper/bundle";
+import Swiper from "swiper";
 
 const productList = {
   init: () => {
-    new Swiper(".product-list-container", {
+    new Swiper(".list-product .product-list-container", {
       // Optional parameters
       direction: "horizontal",
       loop: true,

@@ -1,8 +1,8 @@
-import Swiper from "swiper/bundle";
+import Swiper from "swiper";
 
 const brand = {
   init: () => {
-    new Swiper(".brand-container", {
+    new Swiper(".brand .brand-container", {
       // Optional parameters
       direction: "horizontal",
       loop: true,

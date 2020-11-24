@@ -4,7 +4,7 @@
 
 // Plugin
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@import '../../../node_modules/swiper/swiper.scss';
+@import "../../../node_modules/swiper/swiper.scss";
 // Base
 @import "./base/font-language/en-EN";
 @import "./base/_functions";
@@ -32,8 +32,9 @@
 @import "../../views/components/productPage/productSection/product-section.scss";
 @import "../../views/components/productPage/product-item/product-item.scss";
 @import "../../views/components/productPage/categorySection/category-section.scss";
-
-
+@import "../../views/components/aboutPage/headerInfomation/headerInfomation.scss";
+@import "../../views/components/productDetailPage/product/product.scss";
+@import "../../views/components/productDetailPage/productDetail/product-detail.scss";
 
 //Page
 @import "../../views/components/homePage/home-page.scss";

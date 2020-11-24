@@ -1,6 +1,31 @@
-.about-page {
+.about-page,
+.product-page,
+.product-detail-page {
   .header {
     background: #fff;
+    color: #000;
+    position: relative;
+
+    .nav-menu-link {
+      color: #000;
+      font-weight: 500;
+
+      &:hover {
+        color: #e5ae49;
+      }
+    }
+  }
+
+  .header-fixed {
+    .header {
+      position: fixed;
+      z-index: 3;
+      box-shadow: 0 0 10px 0 rgb(61, 61, 61);
+    }
+
+    .header-infomation {
+      display: none;
+    }
   }
 
   &__brand-section {

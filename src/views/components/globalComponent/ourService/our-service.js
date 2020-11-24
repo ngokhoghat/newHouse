@@ -1,8 +1,8 @@
-import Swiper from "swiper/bundle";
+import Swiper from "swiper";
 
 const ourService = {
   init: () => {
-    new Swiper(".our-service-container", {
+    new Swiper(".our-service .our-service-container", {
       // Optional parameters
       direction: "horizontal",
       loop: true,

@@ -12,7 +12,9 @@ block content
   //- Desktop page
   section.about-page
     //- header
-    include ../components/header/header.pug
+    .about-page__header-container
+      include ../components/aboutPage/headerInfomation/headerInfomation.pug
+      include ../components/header/header.pug
     .about-page__breadcrumb-section
       include ../components/aboutPage/bread-crumb/bread-crumb.pug
     .about-page__introduce-section
