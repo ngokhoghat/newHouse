@@ -8,42 +8,43 @@
           .cart-detail__message__text “Bàn ghế sofa da Alula” đã được thêm vào giỏ hàng.
         .cart-detail__message__btn  Tiếp tục xem sản phẩm
       table.cart-detail__table
-        thead
+        thead.cart-detail__table__header
           tr
-            th
-            th
-            th Sản phẩm
-            th Giá
-            th Số lượng
-            th Tổng cộng
-        tbody
+            th.product-remove
+            th.product-thumbnail
+            th.product-name Sản phẩm
+            th.product-price Giá
+            th.product-quantity Số lượng
+            th.product-subtotal Tổng cộng
+        tbody.cart-detail__table__body
           tr
-            td
+            td.product-remove
               .fas.fa-times
-            td
-              img(src="https://kitasofa.com/wp-content/uploads/2020/06/ghe-thu-gian.jpg", alt="", srcset="")
-            td Ghế thứ giãn
-            td 3 500 000
-            td
+            td.product-thumbnail
+              img(src="https://kitasofa.com/wp-content/uploads/2020/06/ghe-thu-gian.jpg" alt="" srcset="")
+            td.product-name Ghế thứ giãn
+            td.product-price 3 500 000
+            td.product-quantity
               input(type="numbet" value="1")
-            td 3 500 000
+            td.product-subtotal 3 500 000
           tr
-            td
+            td.product-remove
               .fas.fa-times
-            td
-              img(src="https://kitasofa.com/wp-content/uploads/2020/06/ghe-thu-gian.jpg", alt="", srcset="")
-            td Ghế thứ giãn
-            td 3 500 000
-            td
-              input(type="number" value="1")
-            td 3 500 000
+            td.product-thumbnail
+              img(src="https://kitasofa.com/wp-content/uploads/2020/06/ghe-thu-gian.jpg" alt="" srcset="")
+            td.product-name Ghế thứ giãn
+            td.product-price 3 500 000
+            td.product-quantity
+              input(type="numbet" value="1")
+            td.product-subtotal 3 500 000
           tr
             td
             td
             td
             td
             td
-            td 3 500 000
+            td
+              .update-btn Cập nhật giỏ hàng
     .cart-detail__mobile
       h1.cart-detail__title Giỏ hàng
       .cart-detail__message
@@ -66,6 +67,9 @@
             input(type="number" value="1")
           li.cart-detail__mobile__table__item.btn-container
             .update-btn Cập nhật giỏ hàng
+    .row
+      .col-12.col-md-7
+      .col-12.col-md-5
         h3 Tồng số lượng
         ul.cart-detail__mobile__table
           li.cart-detail__mobile__table__item
@@ -77,3 +81,5 @@
           li.cart-detail__mobile__table__item
             p Tổng cộng:
             span 79 000 000
+        .checkout-btn Tiến hành thanh toán
+          

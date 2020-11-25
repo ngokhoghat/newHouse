@@ -7,10 +7,10 @@
 
   &__infomation {
     &__title {
+      font-size: 24px;
+      margin: 20px 0;
     }
 
-    &__sku {
-    }
     .price {
       margin-left: 10px;
       font-size: 25px;
@@ -30,7 +30,7 @@
       .price {
         color: rgb(6, 91, 250);
         text-decoration: line-through;
-        font-size: 20px;
+        font-size: 18px;
       }
     }
 
@@ -49,18 +49,25 @@
 
     &__quantity {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       border-bottom: 1px solid #ddd;
       padding: 10px 0;
 
+      @include min-md {
+        flex-direction: row;
+      }
+
       .quantity-container {
         .unit {
           display: flex;
+          align-items: center;
           margin-bottom: 10px;
 
           &__title {
             width: 90px;
             text-transform: uppercase;
+            font-size: 14px;
           }
 
           &__content {
@@ -71,6 +78,7 @@
             padding: 5px 0;
           }
         }
+
         .quantity {
           display: flex;
           align-items: center;
@@ -78,6 +86,7 @@
           &__title {
             width: 90px;
             text-transform: uppercase;
+            font-size: 14px;
           }
 
           &__input {
@@ -90,9 +99,14 @@
       }
 
       .add-to-cart {
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+
         &__btn {
+          text-align: center;
           background: #e5ae49;
-          padding: 10px 40px;
+          padding: 10px;
           border-radius: 30px;
           color: #fff;
           font-size: 15px;
@@ -120,15 +134,19 @@
       .fa-facebook-square {
         color: #4267b2;
       }
+
       .fa-google-plus-square {
         color: #dd4d40;
       }
+
       .fa-twitter-square {
         color: #1da1f2;
       }
+
       .fa-pinterest-square {
         color: #c00b1f;
       }
+
       .fa-linkedin {
         color: #228ae6;
       }
@@ -141,24 +159,29 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .swiper-slide {
     background-size: cover;
     background-position: center;
   }
+
   .gallery-top {
     height: 80%;
     width: 100%;
   }
+
   .gallery-thumbs {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
   }
+
   .gallery-thumbs .swiper-slide {
     width: 25%;
     height: 100%;
     opacity: 0.4;
   }
+
   .gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
   }

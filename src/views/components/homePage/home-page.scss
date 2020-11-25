@@ -7,6 +7,17 @@
     display: none;
   }
 
+  .header-fixed {
+    transition: 0.2s ease-in-out;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0 0 10px 0 rgb(61, 61, 61);
+
+    .header-infomation {
+      display: none;
+    }
+  }
+
   &__banner {
     width: 100%;
     position: relative;

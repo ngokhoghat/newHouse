@@ -37,6 +37,10 @@
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
+
+    @include min-md {
+      font-size: 45px;
+    }
   }
 
   &__btn {

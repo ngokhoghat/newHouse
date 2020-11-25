@@ -1,17 +1,23 @@
 .product-detail-infomation {
   margin: 30px 0;
+  overflow: hidden;
 
   &__tab-btn {
     display: flex;
     border-bottom: 1px solid #ccc;
 
     &__text {
+      min-width: 100px;
+      padding: 5px;
       display: block;
-      padding: 10px 100px;
       text-align: center;
-      font-weight: 500;
+      font-weight: 600;
       color: #000;
       cursor: pointer;
+
+      @include min-sm {
+        min-width: 200px;
+      }
     }
 
     .active {
@@ -21,10 +27,16 @@
   }
 
   &__tab-content {
+    padding: 10px;
+
     .tab {
       visibility: hidden;
       opacity: 0;
       height: 0;
+    }
+
+    .infomation-section__text {
+      font-size: 14px;
     }
 
     .tab-active {

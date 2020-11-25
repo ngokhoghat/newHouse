@@ -1,4 +1,10 @@
 .category-section {
+  margin-top: 30px;
+
+  @include min-md {
+    margin-top: 0;
+  }
+
   &__title {
     height: 45px;
     margin: 0;
@@ -27,7 +33,7 @@
 
   .category-section-item {
     margin-bottom: 20px;
-    
+
     &__title {
       color: #e5ae49;
       text-transform: uppercase;
