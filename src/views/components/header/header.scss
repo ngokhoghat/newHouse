@@ -1,11 +1,19 @@
 .header {
-  width: 100%;
+  width: 100vw;
   background: #333;
   border-bottom: 1px solid #e5ae49;
 
+  .header-infomation {
+    display: none;
+
+    @include min-md {
+      display: flex;
+    }
+  }
+
   @include min-md {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background: rgba($color: #000000, $alpha: 0);
     border: none;
   }
@@ -73,6 +81,7 @@
 
           &:hover {
             color: #e5ae49;
+
             .menu-section {
               visibility: visible;
               opacity: 1;
@@ -111,6 +120,7 @@
     @include min-md {
       width: 10%;
       justify-content: flex-end;
+      color: #fff;
 
       .fas {
         font-size: 20px;

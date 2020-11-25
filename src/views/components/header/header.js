@@ -11,10 +11,12 @@ const Header = {
       if (!ticking) {
         window.requestAnimationFrame(function () {
           let Header = document.querySelector(".header");
-          if (last_known_scroll_position > 70) {
+          if (last_known_scroll_position > 70 && Header) {
             Header.classList.add("header-sticky");
+            Header.classList.add("header-fixed");
           } else {
             Header.classList.remove("header-sticky");
+            Header.classList.remove("header-fixed");
           }
           ticking = false;
         });

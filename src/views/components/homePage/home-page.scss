@@ -3,6 +3,10 @@
   width: 100vw;
   overflow-x: hidden;
 
+  .header-infomation {
+    display: none;
+  }
+
   &__banner {
     width: 100%;
     position: relative;
@@ -11,7 +15,7 @@
   &__product-section {
     overflow: hidden;
   }
-  
+
   &__customer-section {
     overflow: hidden;
   }

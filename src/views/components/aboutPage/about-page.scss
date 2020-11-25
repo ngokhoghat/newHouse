@@ -1,5 +1,6 @@
 .about-page,
 .product-page,
+.cart-detail,
 .product-detail-page {
   .header {
     background: #fff;
@@ -17,11 +18,9 @@
   }
 
   .header-fixed {
-    .header {
-      position: fixed;
-      z-index: 3;
-      box-shadow: 0 0 10px 0 rgb(61, 61, 61);
-    }
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0 0 10px 0 rgb(61, 61, 61);
 
     .header-infomation {
       display: none;

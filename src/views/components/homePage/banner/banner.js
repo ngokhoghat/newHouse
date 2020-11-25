@@ -10,6 +10,7 @@ const banner = {
       // If we need pagination
       pagination: {
         el: ".banner-swiper-pagination",
+        clickable: true,
       },
 
       // Navigation arrows

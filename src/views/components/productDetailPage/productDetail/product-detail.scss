@@ -7,12 +7,33 @@
 
     &__text {
       display: block;
-      background: #e5ae49;
       padding: 10px 100px;
       text-align: center;
       font-weight: 500;
-      color: #fff;
+      color: #000;
       cursor: pointer;
+    }
+
+    .active {
+      background: #e5ae49;
+      color: #fff;
+    }
+  }
+
+  &__tab-content {
+    .tab {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+
+    .tab-active {
+      transition: 0.3s ease-in-out;
+      visibility: visible;
+      width: 100%;
+      opacity: 1;
+      height: auto;
+      color: #000;
     }
   }
 }

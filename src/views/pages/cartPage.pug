@@ -1,7 +1,7 @@
 extends ../layouts/master.pug
 
 block title
-  title My Page - product detail
+  title My Page - cart detail
 
 block basicSeo
   meta(name='description' content='home page')
@@ -11,13 +11,12 @@ block basicSeo
 block content
 
   //- Desktop page
-  section.product-detail-page
+  section.cart-detail
     //- header
     include ../components/header/header.pug
     .about-page__breadcrumb-section
       include ../components/aboutPage/bread-crumb/bread-crumb.pug
-    .product-detail-page__product-container
-      .container
-        include ../components/productDetailPage/product/product.pug
-      .container
-        include ../components/productDetailPage/productDetail/productDetail.pug
+    .cart-detail__section
+      include ../components/cartDetailPage/cartDetail/cartDetail.pug
+    .about-page__brand-section
+      include ../components/homePage/brand/brand.pug
