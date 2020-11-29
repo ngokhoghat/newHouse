@@ -15,12 +15,24 @@
 @import "./base/_flexboxgrid";
 @import "./base/_lazyload";
 
+
+//Page
+@import "../../views/components/homePage/home-page.scss";
+@import "../../views/components/aboutPage/about-page.scss";
+@import "../../views/components/productPage/product-page.scss";
+@import "../../views/components/productDetailPage/product-detail-page.scss";
+@import "../../views/components/cartDetailPage/cart-detail-page.scss";
+@import "../../views/components/checkoutPage/checkout-page.scss";
+
+
 // Component
 @import "../../views/components/header/header";
 @import "../../views/components/footer/footer";
 
 @import "../../views/components/globalComponent/productList/product-list.scss";
 @import "../../views/components/globalComponent/ourService/our-service.scss";
+@import "../../views/components/globalComponent/phoneContact/phoneContact.scss";
+
 @import "../../views/components/homePage/review/review.scss";
 @import "../../views/components/homePage/subscribe/subscribe.scss";
 @import "../../views/components/homePage/customer/customer.scss";
@@ -36,9 +48,8 @@
 @import "../../views/components/productDetailPage/product/product.scss";
 @import "../../views/components/productDetailPage/productDetail/product-detail.scss";
 
-//Page
-@import "../../views/components/homePage/home-page.scss";
-@import "../../views/components/aboutPage/about-page.scss";
-@import "../../views/components/productPage/product-page.scss";
-@import "../../views/components/productDetailPage/product-detail-page.scss";
-@import "../../views/components/cartDetailPage/cart-detail-page.scss";
+@import "../../views/components/checkoutPage/formCheckout/formCheckout.scss";
+@import "../../views/components/checkoutPage/orderContent/orderContent.scss";
+@import "../../views/components/checkoutPage/paymentMethods/payment.scss";
+
+

@@ -1,0 +1,28 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - check out
+
+block basicSeo
+  meta(name='description' content='home page')
+  meta(name='keywords' content='home, page')
+  meta(name='author' content='')
+
+block content
+
+  //- Desktop page
+  section.checkout-page
+    //- header
+    include ../components/header/header.pug
+    .checkout-page__breadcrumb-section
+      include ../components/aboutPage/bread-crumb/bread-crumb.pug
+    .checkout-page__container
+      .container
+        h1.checkout-page__title Thanh toán
+        form(action="" method="post")
+          .checkout-page__form-section
+            include ../components/checkoutPage/formCheckout/formCheckout.pug
+          .checkout-page__order-section
+            include ../components/checkoutPage/orderContent/orderContent.pug
+          .checkout-page__payment-section
+            include ../components/checkoutPage/paymentMethods/payment.pug

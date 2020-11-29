@@ -1,0 +1,22 @@
+.row.form-content
+  .col-12.col-md-6.form-content__customer-infomation
+    h5.customer-infomation__title Thông tin thanh toán
+    .customer-infomation__input
+      .form-label.require Tên
+      input.form-input(type="text")
+    .customer-infomation__input
+      .form-label.require Địa chỉ
+      input.form-input(type="text")
+    .customer-infomation__input-number
+      .form-label.require Tỉnh/ Thành phố
+      input.form-input(type="text")
+    .customer-infomation__input
+      .form-label.require Địa chỉ email
+      input.form-input(type="text")
+  .col-12.col-md-6.form-content__customer-message
+    .customer-message__different-place
+      input#different-place(type="checkbox" name="")
+      h5.customer-message__title Giao hàng tới địa chỉ khác
+    .customer-message__content
+      .customer-message__content__title Ghi chú đơn hàng(tùy chọn)
+      textarea#customer-note(name="" cols="30" rows="5" placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ đạn địa điểm giao hàng chi tiết hơn")

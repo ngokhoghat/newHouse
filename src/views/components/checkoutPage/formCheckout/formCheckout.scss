@@ -1,0 +1,57 @@
+.form-content {
+  &__customer-infomation {
+    width: 100%;
+
+    .customer-infomation__input {
+      margin: 15px 0;
+    }
+
+    .form-label {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .form-input {
+      width: 100%;
+    }
+
+    .require {
+      &::after {
+        content: "*";
+        color: red;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__customer-message {
+    .customer-message {
+      &__different-place {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      &__title {
+        margin: 0;
+        margin-left: 10px;
+      }
+
+      &__content {
+        &__title {
+          font-size: 15px;
+          font-weight: 600;
+        }
+
+        #customer-note {
+          width: 100%;
+          padding: 5px;
+
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

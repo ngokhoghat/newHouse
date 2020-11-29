@@ -1,0 +1,29 @@
+.order-content {
+  margin-top: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+
+  .total,
+  .shipping {
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  &__header {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+  }
+}

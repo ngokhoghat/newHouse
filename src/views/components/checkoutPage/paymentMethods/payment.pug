@@ -1,0 +1,18 @@
+.payment-method
+  .payment-method__container
+    .payment-method__container__section
+      .payment-container
+        input#payment-transfer.payment-container__input(type="radio" name="payment")
+        label.payment-container__label(for="payment-transfer") Chuyển khoản ngân hàng
+      .payment-transfer-content
+        p.payment-transfer-content__text Võ Kim Thùy
+        p.payment-transfer-content__text STK: 19029853599017
+        p.payment-transfer-content__text Ngân hàng: Techcombank
+        p.payment-transfer-content__text Chi nhánh: Nguyễn Văn Linh
+    .payment-method__container__section
+      .payment-container
+        input#payment-dow.payment-container__input(type="radio" name="payment")
+        label.payment-container__label(for="payment-dow") Chuyển khoản ngân hàng
+    .payment-method__container__section
+      .payment-method-btn-container
+        button.payment-method-btn(type="submit") Đặt hàng
