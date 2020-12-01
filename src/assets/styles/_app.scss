@@ -23,6 +23,8 @@
 @import "../../views/components/productDetailPage/product-detail-page.scss";
 @import "../../views/components/cartDetailPage/cart-detail-page.scss";
 @import "../../views/components/checkoutPage/checkout-page.scss";
+@import "../../views/components/newPage/new-page.scss";
+@import "../../views/components/newDetailPage/newDetailPage.scss";
 
 
 // Component
@@ -51,5 +53,10 @@
 @import "../../views/components/checkoutPage/formCheckout/formCheckout.scss";
 @import "../../views/components/checkoutPage/orderContent/orderContent.scss";
 @import "../../views/components/checkoutPage/paymentMethods/payment.scss";
+
+@import "../../views/components/newPage/listNews/listNew.scss";
+@import "../../views/components/newPage/newItem/newItem.scss";
+
+@import "../../views/components/newDetailPage/newDetailSection/newDetailSection.scss";
 
 

@@ -1,0 +1,14 @@
+.new-detail-page-section {
+    .product-section {
+        &__title {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        &__create-time {
+            font-size: 12px;
+            font-style: italic;
+            color: gray;
+        }
+    }
+}
