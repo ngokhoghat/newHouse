@@ -1,6 +1,8 @@
 // import './assets/styles/_app.scss';
 import Global from "./views/components/global/global";
 import Header from "./views/components/header/header";
+import NavMobile from "./views/components/globalComponent/navbarMobile/nav-mobile";
+
 import ProductSwiper from "./views/components/globalComponent/productList/product-list";
 import OurServiceSwiper from "./views/components/globalComponent/ourService/our-service";
 import customerService from "./views/components/homePage/customer/customer";
@@ -15,6 +17,7 @@ import productSection from "./views/components/productPage/productSection/produc
 require("normalize.css");
 
 $(() => {
+  NavMobile.init();
   // Code here
   Header.init();
   // Banner Swiper

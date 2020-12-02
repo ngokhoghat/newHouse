@@ -9,6 +9,12 @@
     background: #fff;
     color: #000;
     position: relative;
+    
+    .header-infomation {
+      @include min-md {
+        display: flex;
+      }
+    }
 
     .nav-menu-link {
       color: #000;

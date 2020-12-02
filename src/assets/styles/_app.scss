@@ -16,6 +16,10 @@
 @import "./base/_lazyload";
 
 
+// Component
+@import "../../views/components/header/header";
+@import "../../views/components/footer/footer";
+
 //Page
 @import "../../views/components/homePage/home-page.scss";
 @import "../../views/components/aboutPage/about-page.scss";
@@ -27,13 +31,10 @@
 @import "../../views/components/newDetailPage/newDetailPage.scss";
 
 
-// Component
-@import "../../views/components/header/header";
-@import "../../views/components/footer/footer";
-
 @import "../../views/components/globalComponent/productList/product-list.scss";
 @import "../../views/components/globalComponent/ourService/our-service.scss";
 @import "../../views/components/globalComponent/phoneContact/phoneContact.scss";
+@import "../../views/components/globalComponent/navbarMobile/nav-mobile.scss";
 
 @import "../../views/components/homePage/review/review.scss";
 @import "../../views/components/homePage/subscribe/subscribe.scss";
