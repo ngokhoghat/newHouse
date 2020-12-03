@@ -1,4 +1,3 @@
-// import './assets/styles/_app.scss';
 import Global from "./views/components/global/global";
 import Header from "./views/components/header/header";
 import NavMobile from "./views/components/globalComponent/navbarMobile/nav-mobile";
@@ -32,6 +31,22 @@ $(() => {
 
   Product.init();
   ProductDetail.init();
+  
+  function initMap() {
+    const uluru = { lat: 21.0277644, lng: 105.8341598 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("google-map"), {
+      zoom: 15,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+
+  initMap()
 });
 
 $(document).ready(() => {

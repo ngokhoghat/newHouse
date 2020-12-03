@@ -5,6 +5,7 @@
 // Plugin
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../../node_modules/swiper/swiper.scss";
+
 // Base
 @import "./base/font-language/en-EN";
 @import "./base/_functions";
@@ -15,21 +16,11 @@
 @import "./base/_flexboxgrid";
 @import "./base/_lazyload";
 
+// Global
 
 // Component
 @import "../../views/components/header/header";
 @import "../../views/components/footer/footer";
-
-//Page
-@import "../../views/components/homePage/home-page.scss";
-@import "../../views/components/aboutPage/about-page.scss";
-@import "../../views/components/productPage/product-page.scss";
-@import "../../views/components/productDetailPage/product-detail-page.scss";
-@import "../../views/components/cartDetailPage/cart-detail-page.scss";
-@import "../../views/components/checkoutPage/checkout-page.scss";
-@import "../../views/components/newPage/new-page.scss";
-@import "../../views/components/newDetailPage/newDetailPage.scss";
-
 
 @import "../../views/components/globalComponent/productList/product-list.scss";
 @import "../../views/components/globalComponent/ourService/our-service.scss";
@@ -60,4 +51,15 @@
 
 @import "../../views/components/newDetailPage/newDetailSection/newDetailSection.scss";
 
+@import "../../views/components/contactPage/form-contact/form-contact.scss";
 
+//Page
+@import "../../views/components/homePage/home-page.scss";
+@import "../../views/components/aboutPage/about-page.scss";
+@import "../../views/components/productPage/product-page.scss";
+@import "../../views/components/productDetailPage/product-detail-page.scss";
+@import "../../views/components/cartDetailPage/cart-detail-page.scss";
+@import "../../views/components/checkoutPage/checkout-page.scss";
+@import "../../views/components/newPage/new-page.scss";
+@import "../../views/components/newDetailPage/newDetailPage.scss";
+@import "../../views/components/contactPage/contact-page.scss";

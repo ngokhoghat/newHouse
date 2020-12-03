@@ -1,0 +1,13 @@
+.contact-page {
+  color: #000;
+
+  .google-map-container {
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+
+    @include min-md {
+      height: 500px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.form-contact {
+  margin-bottom: 20px;
+
+  &__customer {
+    &__input {
+      width: 100%;
+      padding: 5px 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    &__btn {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background: #50ABF1;
+      border-radius: 3px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .form-textarea {
+      height: 100px;
+    }
+  }
+
+  &__client {
+    &__item {
+      margin: 15px 0;
+    }
+
+    .client-item__title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 16px;
+      color: #50ABF1;
+    }
+
+    .client-item__address {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      &__icon {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__text {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+}

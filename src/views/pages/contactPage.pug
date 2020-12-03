@@ -1,0 +1,24 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Contact
+
+block basicSeo
+  meta(name='description' content='home page')
+  meta(name='keywords' content='home, page')
+  meta(name='author' content='')
+
+block content
+
+  //- Desktop page
+  section.contact-page
+    //- header
+    include ../components/header/header.pug
+    .contact-page__breadcrumb-section
+      include ../components/aboutPage/bread-crumb/bread-crumb.pug
+    .container
+      h1.cart-detail__title Liên hệ
+      include ../components/contactPage/google-map/google-map.pug
+      include ../components/contactPage/form-contact/form-contact.pug
+    .form-contact__section
+    include ../components/homePage/brand/brand.pug
